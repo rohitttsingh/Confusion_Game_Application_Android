@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".Level6">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:alpha="0.8"
+        android:padding="-32dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bgbg" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblue"
+        android:backgroundTint="@color/lightblue"
+        app:subtitle=""
+        app:subtitleTextColor="@color/white"
+        app:title="Level 6 | Score: 60"
+        app:titleTextColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textColorWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odd one out"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/DarkBlue"
+                android:fontFamily="@font/acme"
+                android:textSize="60sp"
+                android:layout_marginTop="60dp"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:lottie_rawRes="@raw/loading"
+                app:lottie_autoPlay="true"
+                android:layout_centerInParent="true"
+                app:lottie_loop="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="29"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:onClick="notwork"
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/acme"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="53"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="notwork"
+                    android:layout_gravity="center"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/acme"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="85"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/acme"
+                    android:onClick="notwork"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="125"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:onClick="worked"
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/acme"
+                    android:layout_weight="1"
+
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

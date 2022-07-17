@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Level2">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:alpha="4"
+        android:padding="-32dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/spacebg" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblue"
+        android:backgroundTint="@color/lightblue"
+        app:subtitle=""
+        app:subtitleTextColor="@color/white"
+        app:title="Level 5 | Score: 20"
+        app:titleTextColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/textColorWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YELLOW"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/Yellow"
+                android:onClick="worked"
+                android:fontFamily="@font/acme"
+                android:textSize="80sp"
+                android:layout_marginTop="140dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textQuery"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Color?"
+                android:textColor="@color/Gold"
+                android:fontFamily="@font/acme"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@color/GreenYellow"
+                    android:onClick="notwork"
+                    android:layout_margin="42dp"
+                    android:layout_weight="1"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button2"
+                    android:layout_width="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="42dp"
+                    android:layout_height="120dp"
+                    android:onClick="notwork"
+                    android:background="@color/Gold"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

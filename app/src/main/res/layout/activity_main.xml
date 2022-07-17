@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblue"
+        app:titleTextColor="@color/white"
+        app:title="Level 9"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/lightblue"
+        android:text="Enter Your Name" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        app:lottie_rawRes="@raw/name"
+        app:lottie_autoPlay="true"
+        android:layout_centerInParent="true"
+        app:lottie_loop="true"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_gravity="center"
+        android:hint="ENTER HERE"
+        android:gravity="center"
+        android:inputType="textCapCharacters"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+        android:textColor="@color/red"
+        android:background="@drawable/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <EditText
+        android:id="@+id/falsename"
+        android:layout_gravity="center"
+        android:hint="NOT HERE"
+        android:inputType="textCapCharacters"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+        android:textColor="@color/green"
+        android:background="@drawable/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_gravity="center"
+        android:background="@color/green"
+        android:backgroundTint="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:text="Submit"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/falsesubmit"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/red"
+        android:background="@color/red"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Don't Submit"/>
+
+
+</LinearLayout>
