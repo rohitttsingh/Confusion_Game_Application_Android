@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import es.dmoral.toasty.Toasty;
+
 public class MainActivity extends AppCompatActivity {
 
 EditText name,falsename;
@@ -33,10 +35,10 @@ AppCompatButton submit, falsesubmit;
             @Override
             public void onClick(View view) {
                 if(falsename.getText().toString().isEmpty()){
-                    Toast.makeText(MainActivity.this,"TRY AGAIN",Toast.LENGTH_SHORT).show();
+                    Toasty.error(MainActivity.this,"TRY AGAIN",Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Toast.makeText(MainActivity.this, "HEY "+falsename.getText().toString()+" IT WORKED", Toast.LENGTH_SHORT).show();
+                    Toasty.info(MainActivity.this, "HEY "+falsename.getText().toString()+" IT WORKED", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), Level1.class);
 
                     SharedPreferences.Editor editor = sharedpreferences.edit();
@@ -51,7 +53,7 @@ AppCompatButton submit, falsesubmit;
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"TRY AGAIN",Toast.LENGTH_LONG).show();
+                Toasty.error(MainActivity.this,"TRY AGAIN",Toast.LENGTH_LONG).show();
 
             }
         });

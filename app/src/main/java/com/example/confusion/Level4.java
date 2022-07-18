@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import es.dmoral.toasty.Toasty;
+
 public class Level4 extends AppCompatActivity {
 
     Toolbar toolbar;
@@ -26,11 +28,11 @@ public class Level4 extends AppCompatActivity {
         toolbar.setSubtitle("Player: "+a);
     }
     public void notwork(View view) {
-        Toast.makeText(getApplicationContext(),"TRY TRY BUT DON'T CRY",Toast.LENGTH_SHORT).show();
+        Toasty.error(getApplicationContext(),"TRY TRY BUT DON'T CRY",Toast.LENGTH_SHORT).show();
     }
 
     public void worked(View view) {
-        Toast.makeText(getApplicationContext(),"CONGRATS, BICYCLE IS THE ONLY NON FUELED VEHICLE",Toast.LENGTH_SHORT).show();
+        Toasty.success(getApplicationContext(),"CONGRATS, BICYCLE IS THE ONLY NON FUELED VEHICLE",Toast.LENGTH_LONG).show();
 
         startActivity(new Intent(getApplicationContext(),Level5.class));
     }

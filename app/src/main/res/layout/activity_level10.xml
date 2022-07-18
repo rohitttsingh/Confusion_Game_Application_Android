@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:alpha="0.8"
+        android:alpha="1.8"
         android:padding="-32dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
@@ -46,37 +46,36 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="60dp"
+                android:background="@drawable/edittext"
                 android:fontFamily="@font/acme"
                 android:gravity="center"
-                android:text="Odd one out"
-                android:textColor="@color/DarkBlue"
+                android:padding="4dp"
+                android:onClick="worked"
+                android:text="Odd out one"
+                android:textColor="@color/DarkSlateBlue"
                 android:textSize="60sp"
                 android:textStyle="bold" />
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginTop="50dp"
-                app:lottie_autoPlay="true"
-                app:lottie_loop="true"
-                app:lottie_rawRes="@raw/loading" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp">
+                android:layout_marginTop="250dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
+                    android:background="@drawable/edittext2"
                     android:fontFamily="@font/acme"
                     android:gravity="center"
                     android:onClick="notwork"
-                    android:text="29"
-                    android:textColor="@color/green"
+                    android:padding="4dp"
+                    android:text="AB"
+                    android:textAllCaps="true"
+                    android:textColor="@color/MediumTurquoise"
                     android:textSize="40sp"
                     android:textStyle="bold" />
 
@@ -84,13 +83,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
+                    android:background="@drawable/edittext2"
                     android:fontFamily="@font/acme"
                     android:gravity="center"
                     android:onClick="notwork"
-                    android:text="53"
+                    android:padding="4dp"
+                    android:text="UH"
                     android:textAllCaps="true"
-                    android:textColor="@color/red"
+                    android:textColor="@color/MediumTurquoise"
                     android:textSize="40sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -105,13 +107,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
+                    android:background="@drawable/edittext2"
                     android:fontFamily="@font/acme"
                     android:gravity="center"
                     android:onClick="notwork"
-                    android:text="85"
+                    android:padding="4dp"
+                    android:text="kE"
                     android:textAllCaps="true"
-                    android:textColor="@color/green"
+                    android:textColor="@color/MediumTurquoise"
                     android:textSize="40sp"
                     android:textStyle="bold" />
 
@@ -119,13 +124,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
+                    android:background="@drawable/edittext2"
                     android:fontFamily="@font/acme"
                     android:gravity="center"
-                    android:onClick="worked"
-                    android:text="125"
-                    android:textColor="@color/green"
-
+                    android:onClick="notwork"
+                    android:padding="4dp"
+                    android:text="JI"
+                    android:textColor="@color/MediumTurquoise"
                     android:textSize="40sp"
                     android:textStyle="bold" />
             </LinearLayout>

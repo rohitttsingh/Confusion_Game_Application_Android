@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/lightblue"
     tools:context=".Level3">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -16,7 +16,7 @@
         android:padding="-32dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/lionbg" />
+        app:lottie_rawRes="@raw/spacebg" />
 
 
     <androidx.appcompat.widget.Toolbar
@@ -55,6 +55,8 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/acme"
                 android:text="Object ?"
+                android:layout_margin="10dp"
+                android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="36sp" />
 

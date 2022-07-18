@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:alpha="0.8"
+        android:alpha="8"
         android:padding="-32dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
@@ -46,46 +46,48 @@
                 android:layout_height="wrap_content"
                 android:text="Odd one out"
                 android:gravity="center"
+                android:background="@drawable/edittext2"
+                android:padding="4dp"
                 android:layout_gravity="center"
-                android:textColor="@color/DarkBlue"
+                android:textColor="@color/SkyBlue"
                 android:fontFamily="@font/acme"
                 android:textSize="60sp"
                 android:layout_marginTop="60dp"
                 android:textStyle="bold" />
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                app:lottie_rawRes="@raw/loading"
-                app:lottie_autoPlay="true"
-                android:layout_centerInParent="true"
-                app:lottie_loop="true"/>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="250dp"
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="29"
+                    android:text="mnZ"
                     android:gravity="center"
                     android:layout_weight="1"
                     android:layout_gravity="center"
-                    android:onClick="notwork"
+                    android:onClick="worked"
+                    android:background="@drawable/edittext2"
+                    android:layout_margin="5dp"
+                    android:padding="4dp"
                     android:textColor="@color/green"
                     android:fontFamily="@font/acme"
                     android:textSize="40sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="53"
-                    android:textAllCaps="true"
+                    android:text="DfE"
                     android:gravity="center"
                     android:layout_weight="1"
                     android:onClick="notwork"
+                    android:background="@drawable/edittext2"
+                    android:layout_margin="5dp"
+                    android:padding="4dp"
                     android:layout_gravity="center"
                     android:textColor="@color/red"
                     android:fontFamily="@font/acme"
@@ -101,12 +103,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="85"
+                    android:text="AtB"
                     android:gravity="center"
                     android:layout_weight="1"
-                    android:textAllCaps="true"
+                    android:background="@drawable/edittext2"
+                    android:layout_margin="5dp"
+                    android:padding="4dp"
                     android:layout_gravity="center"
-                    android:textColor="@color/green"
+                    android:textColor="@color/red"
                     android:fontFamily="@font/acme"
                     android:onClick="notwork"
                     android:textSize="40sp"
@@ -114,14 +118,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="125"
+                    android:text="SiM"
                     android:gravity="center"
                     android:layout_gravity="center"
-                    android:onClick="worked"
+                    android:onClick="notwork"
                     android:textColor="@color/green"
+                    android:background="@drawable/edittext2"
+                    android:layout_margin="5dp"
+                    android:padding="4dp"
                     android:fontFamily="@font/acme"
                     android:layout_weight="1"
-
                     android:textSize="40sp"
                     android:textStyle="bold" />
             </LinearLayout>

@@ -4,20 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/edittext.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_level1.xml" value="0.1622039794921875" />
-        <entry key="app/src/main/res/layout/activity_level10.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_level11.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/drawable/edittext2.xml" value="0.142" />
+        <entry key="app/src/main/res/layout/activity_level1.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_level10.xml" value="0.17376861572265623" />
+        <entry key="app/src/main/res/layout/activity_level11.xml" value="0.260595703125" />
         <entry key="app/src/main/res/layout/activity_level18.xml" value="0.2520833333333333" />
         <entry key="app/src/main/res/layout/activity_level19.xml" value="0.2520833333333333" />
         <entry key="app/src/main/res/layout/activity_level2.xml" value="0.166064453125" />
         <entry key="app/src/main/res/layout/activity_level20.xml" value="0.2520833333333333" />
         <entry key="app/src/main/res/layout/activity_level3.xml" value="0.16473846435546874" />
         <entry key="app/src/main/res/layout/activity_level4.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_level5.xml" value="0.23292999267578124" />
-        <entry key="app/src/main/res/layout/activity_level6.xml" value="0.3912307739257813" />
-        <entry key="app/src/main/res/layout/activity_level7.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_level8.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_level9.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_level5.xml" value="0.23716430664062504" />
+        <entry key="app/src/main/res/layout/activity_level6.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_level7.xml" value="0.13240740740740742" />
+        <entry key="app/src/main/res/layout/activity_level8.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_level9.xml" value="0.17012634277343752" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
       </map>

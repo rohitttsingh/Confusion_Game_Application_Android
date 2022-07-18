@@ -13,8 +13,9 @@
         android:layout_height="wrap_content"
         android:background="@color/lightblue"
         app:titleTextColor="@color/white"
+        app:subtitleTextColor="@color/white"
+        app:subtitle="Score:0"
         app:title="Level 9"/>
-
 
 
     <TextView
